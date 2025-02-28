@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yzsoft.wx.dao.RefundMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.yzsoft.wx.entity.Refund">
+        <id column="order_no" property="orderNo" />
+        <result column="refund_no" property="refundNo" />
+        <result column="channel_refund_no" property="channelRefundNo" />
+        <result column="deal_amount" property="dealAmount" />
+        <result column="refund_amount" property="refundAmount" />
+        <result column="refund_time" property="refundTime" />
+        <result column="org_name" property="orgName" />
+        <result column="org_id" property="orgId" />
+        <result column="updated_at" property="updatedAt" />
+        <result column="refund_channel" property="refundChannel" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        order_no, refund_no, channel_refund_no, deal_amount, refund_amount, refund_time, org_name, org_id, updated_at, refund_channel
+    </sql>
+
+</mapper>
